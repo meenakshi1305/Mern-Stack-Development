@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(16, 89, 135);
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      background-color: whitesmoke;
+      height: fit-content;
+      width: 350px;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    p {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+      color: rgb(88, 88, 88);
+      font-weight: 400;
+    }
+
+    p b {
+      flex: 1;
+      min-width: 120px; /* ensures labels align properly */
+    }
+
+    input {
+      flex: 2;
+      height: 30px;
+      border-radius: 10px;
+      border: 1px solid rgb(16, 89, 135);
+      padding: 0 8px;
+    }
+
+    h2 {
+      color: rgb(16, 89, 135);
+      margin-bottom: 5px;
+    }
+
+    h4 {
+      color: grey;
+      margin-top: 0;
+    }
+
+    button {
+      border-radius: 10px;
+      height: 35px;
+      width: 100%;
+      border: none;
+      color: whitesmoke;
+      background-color: rgb(16, 89, 135);
+      font-size: large;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgb(13, 70, 110);
+    }
+    span {
+      margin: 100px;
+    }
+  </style>
+  <body>
+    <form action="">
+      <h2>Register Form</h2>
+      <h4>enter your personal details!</h4>
+      <p>
+        <b>Name</b>
+        <input type="text" placeholder="Enter Name" required />
+      </p>
+      <p>
+        <b>Age:</b>
+        <input type="number" placeholder="Enter Age" required />
+      </p>
+      <p>
+        <b>Date of Birth:</b>
+        <input type="date" placeholder="Enter DOB" required />
+      </p>
+      <p>
+        <b>Gender:</b>
+        <label>Male <input type="radio" name="gender" /></label>
+        <label>Female <input type="radio" name="gender" /></label>
+        <label>Others <input type="radio" name="gender" /></label>
+      </p>
+      <p>
+        <b>Phone Number:</b>
+        <input type="number" placeholder="Enter Password" required />
+      </p>
+      <p>
+        <b>Email ID:</b>
+        <input type="email" placeholder="Enter Password" required />
+      </p>
+      <p>
+        <b>Educational Qualification:</b>
+        <label>Undergraduate <input type="checkbox" name="Education" /></label>
+        <label>Postgraduate <input type="checkbox" name="Education" /></label>
+        <label>Phd <input type="checkbox" name="Education" /></label>
+      </p>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

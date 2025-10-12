@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn Form</title>
+    <style>
+      body {
+        background-color: rgb(16, 89, 135);
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      form {
+        background-color: whitesmoke;
+        height: fit-content;
+        width: 350px;
+        border-radius: 10px;
+        padding: 20px;
+      }
+
+      p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        color: rgb(88, 88, 88);
+        font-weight: 400;
+      }
+
+      p b {
+        flex: 1;
+        min-width: 120px; /* ensures labels align properly */
+      }
+
+      input {
+        flex: 2;
+        height: 30px;
+        border-radius: 10px;
+        border: 1px solid rgb(16, 89, 135);
+        padding: 0 8px;
+      }
+
+      h2 {
+        color: rgb(16, 89, 135);
+        margin-bottom: 5px;
+      }
+
+      h4 {
+        color: grey;
+        margin-top: 0;
+      }
+
+      button {
+        border-radius: 10px;
+        height: 35px;
+        width: 100%;
+        border: none;
+        color: whitesmoke;
+        background-color: rgb(16, 89, 135);
+        font-size: large;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: rgb(13, 70, 110);
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <h2>SignIn Form</h2>
+      <h4>Enter your signin credentials!</h4>
+      <p>
+        <b>Email Id:</b>
+        <input type="text" placeholder="Enter Email Id" required />
+      </p>
+      <p>
+        <b>Password:</b>
+        <input type="password" placeholder="Enter Password" required />
+      </p>
+      <p>
+        <b>Confirm Password:</b>
+        <input type="password" placeholder="Confirm Password" required />
+      </p>
+      <button>
+        <a href="loginForm.html" style="color: aliceblue">SignIn</a>
+      </button>
+    </form>
+  </body>
+</html>
