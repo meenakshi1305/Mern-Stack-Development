@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <div class="bkBody">
+      <div id="p1">
+        <div id="img">
+          <img src="" alt="" />
+        </div>
+        <h3>Heading</h3>
+        <div class="content">
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
+        </div>
+        <div class="icons">
+          <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+
+        <div class="btn"><button>view btn</button></div>
+        <div class="btn"><button>view btn</button></div>
+      </div>
+      <div id="p2">
+        <div id="img">
+          <img src="" alt="" />
+        </div>
+        <h3>Heading</h3>
+        <div class="content">
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
+        </div>
+        <div class="icons">
+          <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+
+        <div class="btn"><button>view btn</button></div>
+        <div class="btn"><button>view btn</button></div>
+      </div>
+      <div id="p3">
+        <div id="img">
+          <img src="" alt="" />
+        </div>
+        <h3>Heading</h3>
+        <div class="content">
+          <p>Lorem, ipsum.</p>
+          <p>Lorem, ipsum.</p>
+        </div>
+        <div class="icons">
+          <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+
+        <div class="btn"><button>view btn</button></div>
+        <div class="btn"><button>view btn</button></div>
+      </div>
+    </div>
+  </body>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      padding: 5%;
+    }
+    .bkBody {
+      background-color: rgb(233, 232, 232);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: auto;
+      width: auto;
+      padding: 5%;
+      border-radius: 10px;
+    }
+    #p1 {
+      height: 500px;
+      width: 300px;
+      background-color: black;
+      border-radius: 10px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #p2 {
+      height: 500px;
+      width: 300px;
+      background-color: black;
+      border-radius: 10px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #p3 {
+      height: 500px;
+      width: 300px;
+      background-color: black;
+      border-radius: 10px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    img {
+      height: 120px;
+      width: 120px;
+      background-color: aliceblue;
+      border: 2px solid var(--c);
+      border-radius: 50%;
+      box-shadow: 2px 3px 5px var(--c), -2px -3px 5px var(--c);
+    }
+    :root {
+      --c: rgb(239, 36, 127);
+      --bg: linear-gradient(#000, rgb(17, 17, 17));
+      --bg2: linear-gradient(rgb(216, 30, 108), rgb(9, 61, 18));
+      --border: aqua;
+      --hbg: linear-gradient(rgb(111, 27, 213), rgb(7, 78, 81));
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      gap: 20px;
+    }
+    .icons {
+      display: flex;
+      gap: 10px;
+    }
+    .icon {
+      width: 30px;
+      height: 30px;
+      background: var(--bg2);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 30px;
+    }
+    .btn {
+      width: 100%;
+    }
+    .btn button {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      outline: 0;
+      background: rgba(0, 0, blue, alpha);
+      border: 2px solid var(--border);
+      padding: 5px 0px;
+      color: var(--border);
+      transition: 0.3s;
+    }
+    .btn button:hover {
+      border-right: 2px solid rgb(54, 228, 31);
+      border-bottom: 2px solid rgb(24, 47, 198);
+    }
+  </style>
+</html>

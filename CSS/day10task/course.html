@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <title>course</title>
+  </head>
+  <body>
+    <div class="bkBody">
+      <div class="programming">
+        <div class="title">
+          <h1>PROGRAMMING</h1>
+          <i class="fa-solid fa-file-video"></i>
+        </div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro,
+          perspiciatis natus maiores ea esse reprehenderit unde, ullam autem
+          adipisci tenetur repellat consectetur nemo doloribus quibusdam magnam
+          provident ut aspernatur perferendis.
+        </p>
+        <hr />
+      </div>
+      <div class="secutiry">
+       <div class="title">
+          <h1>SECURITY</h1>
+          <i class="fa-solid fa-shield-heart"></i>
+        </div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro,
+          perspiciatis natus maiores ea esse reprehenderit unde, ullam autem
+          adipisci tenetur repellat consectetur nemo doloribus quibusdam magnam
+          provident ut aspernatur perferendis.
+        </p>
+        <hr />
+        </div>
+      </div>
+    </div>
+  </body>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      padding: 5%;
+    }
+    .bkBody {
+      background-color: rgb(233, 232, 232);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: auto;
+      width: auto;
+      padding: 5%;
+      border-radius: 2px;
+    }
+    .programming {
+      height:fit-content;
+      width: 500px;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px white;
+      padding: 50px;
+      color: var(--color);
+    }
+    .secutiry {
+      height: fit-content;
+      width: 500px;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px white;
+      padding: 50px;
+      color: var(--color);
+    }
+    i {
+      background-color: var(--bgcolor);
+      font-size: 30px;
+    }
+    p{
+      margin-top: 30px;
+    }
+    hr {
+      border: none; /* Removes the default border */
+      height: 5px; /* Sets a height for the hr element to display the gradient */
+      background-image: var(--bgcolor);
+       margin-top: 30px;
+    }
+    :root {
+      --bgcolor: linear-gradient(
+        to right,
+        rgb(166, 10, 77),
+        rgb(238, 128, 187),
+        blue
+      );
+      --color: rgb(76, 76, 76);
+    }
+    .title {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</html>

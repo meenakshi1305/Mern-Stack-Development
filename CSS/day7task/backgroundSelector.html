@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="demo.css" />
+    <title>Cascading stylesheet</title>
+  </head>
+  <body>
+    <h1>Kriti Silvers</h1>
+    <h2 style="color: aqua">silver jewelry store</h2>
+    <h3>925 silver</h3>
+    <p id="nithya">nithyaka</p>
+    <p class="nithya">nithyaka</p>
+    <div class="atag">
+      <a>hello</a>
+      <a>hello</a>
+      <a>hello</a>
+      <a>hello</a>
+      <a>hello</a>
+    </div>
+    <span
+      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fugit
+      eos maiores nesciunt, praesentium amet excepturi. Non distinctio esse eius
+      iure. Nihil ut id aliquid veritatis ullam reiciendis voluptate ab.
+    </span>
+    <div style="display: flex">
+      <div id="dharshu">
+        <img
+          src="../asset/image/bangle.jpg"
+          alt="Kritisilvers"
+          height="300px"
+          width="300px"
+        />
+      </div>
+      <div id="shasha">
+        <img
+          src="../asset/image/ring.jpg"
+          alt="Kritisilvers"
+          height="300px"
+          width="300px"
+        />
+      </div>
+    </div>
+  </body>
+  <style>
+    /*element and tags selector*/
+    h3 {
+      color: blueviolet;
+    }
+    /*id selector*/
+    #nithya {
+      color: green;
+    }
+    /*class selector*/
+    .nithya {
+      color: yellow;
+    }
+    /*group selector*/
+    p,
+    span {
+      background-color: red;
+    }
+    /*descendent selector*/
+    #dharshu img {
+      outline: 20px dotted green;
+      height: 300px;
+      width: 300px;
+      margin: 20px;
+    }
+    div a:first-child {
+      color: purple;
+    }
+    div a:last-child {
+      color: orange;
+    }
+    .atag {
+      font-size: larger;
+      background-color: aquamarine;
+      padding: 20px;
+      margin: 20px 30px 30px 20px;
+      height: 300px;
+      width: 300px;
+      border-radius: 20px;
+    }
+    #shasha img {
+      outline: 10px dashed green;
+      height: 300px;
+      width: 300px;
+      margin: 20px;
+    }
+  </style>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-
+width, initial-scale=1.0"
+    />
+
+    <title>CSS Selectors Demo</title>
+    <style>
+      /* Basic page styling */
+      body {
+        font-family: Arial, sans-serif;
+
+        background: #f4f6f9;
+        margin: 0;
+        padding: 30px;
+      }
+      h1 {
+        text-align: center;
+        background: #1e293b;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+      }
+      section {
+        background: white;
+        border-radius: 10px;
+        margin: 25px 0;
+        padding: 20px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: #2563eb;
+        margin-top: 0;
+        border-bottom: 2px solid #2563eb;
+        padding-bottom: 5px;
+      }
+      /* 1. Basic Selectors */
+      * {
+        box-sizing: border-box;
+      }
+      p {
+        color: #111;
+      }
+      .example {
+        color: green;
+      }
+      #unique {
+        color: red;
+      }
+      /* 2. Combinators */
+      div p {
+        color: blue;
+      } /* descendant */
+      div > p {
+        background: #0cc5e5;
+      } /* child */
+      h3 + p {
+        color: purple;
+      } /* adjacent sibling */
+      h3 ~ p {
+        border-left: 4px solid #f97316;
+        padding-left: 8px;
+      } /* general sibling */
+      /* 3. Attribute Selectors */
+      [type] {
+        background: #e2e8f0;
+      }
+      [type="text"] {
+        border: 2px solid #2563eb;
+      }
+      [class~="highlight"] {
+        color: #f43f5e;
+      }
+      [lang|="en"] {
+        font-style: italic;
+      }
+      [href^="https"] {
+        color: #10b981;
+      }
+      [src$=".jpg"] {
+        border: 3px solid #14b8a6;
+      }
+      [title*="demo"] {
+        background: #fde68a;
+      }
+      /* 4. Pseudo-classes */
+      a:hover {
+        color: orange;
+      }
+      input:focus {
+        border-color: green;
+      }
+      a:visited {
+        color: purple;
+      }
+      input:checked {
+        box-shadow: 0 0 10px green;
+      }
+      li:first-child {
+        color: red;
+      }
+      li:last-child {
+        color: blue;
+      }
+      li:nth-child(2) {
+        background: #fcd34d;
+      }
+      p:empty {
+        height: 20px;
+        background: #63b426;
+      }
+      div:has(img) {
+        border: 2px dashed #9333ea;
+      }
+      :is(h4, h5) {
+        color: #16a34a;
+      }
+      /* 5. Pseudo-elements */
+      p::before {
+        content: "👉 ";
+        color: #2563eb;
+      }
+      p::after {
+        content: " ✅";
+        color: #16a34a;
+      }
+      p::first-letter {
+        font-size: 1.4em;
+        font-weight: bold;
+      }
+      p::first-line {
+        background: #e0f7fa;
+      }
+      ::selection {
+        background: yellow;
+        color: black;
+      }
+      ::placeholder {
+        color: gray;
+      }
+      li::marker {
+        color: #dc2626;
+      }
+
+      /* 6. UI State */
+      input:disabled {
+        background: #ddd;
+      }
+      input:required {
+        border: 2px solid red;
+      }
+      /* 7. Structural */
+      article:has(h2) {
+        border: 2px solid #a855f7;
+        padding: 10px;
+      }
+      section:has(.inner-box) {
+        background: #f0fdfa;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors Playground</h1>
+    <section>
+      <h2>Basic Selectors</h2>
+      <p>This is a normal paragraph.</p>
+      <p class="example">This uses a <code>.class</code> selector.</p>
+
+      <p id="unique">
+        This uses an <code>#id</code>
+
+        selector.
+      </p>
+    </section>
+    <section>
+      <h2>Combinator Selectors</h2>
+      <div>
+        <p>Inside div (descendant)</p>
+        <p>Direct child of div</p>
+      </div>
+      <h3>Heading</h3>
+      <p>Adjacent sibling paragraph</p>
+      <p>General sibling paragraph</p>
+    </section>
+    <section>
+      <h2>Attribute Selectors</h2>
+      <input type="text" placeholder="Text input" />
+      <input type="email" placeholder="Email input" />
+
+      <img src="test.png" alt="demo image" title="demo picture" width="50" />
+
+      <a
+        href="https://nikaa.in/"
+        title="demo
+
+link"
+        >Example HTTPS Link</a
+      >
+    </section>
+    <section>
+      <h2>Pseudo-classes</h2>
+      <a href="#">Hover or visit this link</a><br /><br />
+
+      <input type="checkbox" checked /> Checked<br />
+      <input type="text" required placeholder="Required field" /><br />
+
+      <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Last</li>
+      </ul>
+      <p></p>
+      <div>
+        <img src="media/img/city.jpg" width="50" alt="" />
+      </div>
+    </section>
+    <section>
+      <h2>Pseudo-elements</h2>
+      <p>This paragraph uses ::before, ::after, ::first-letter, ::first-line</p>
+
+      <p>Try selecting this text to see ::selection</p>
+      <ul>
+        <li>List one</li>
+        <li>List two</li>
+      </ul>
+    </section>
+    <section>
+      <h2>UI States</h2>
+      <input type="text" placeholder="Focus me" />
+      <input type="text" disabled placeholder="Disabled" />
+    </section>
+    <section>
+      <h2>Structural & Logical</h2>
+      <article>
+        <h2>Article with heading</h2>
+        <p>Inside article styled using :has()</p>
+      </article>
+      <section class="inner-box">
+        <p>Section with nested class triggers :has()</p>
+      </section>
+    </section>
+  </body>
+</html>

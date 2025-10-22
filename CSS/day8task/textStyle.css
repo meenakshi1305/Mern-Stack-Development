@@ -1,0 +1,128 @@
+/* p {
+  text-align: center;
+  border: 2px solid blue;
+  width: 500px;
+  padding: 20px;
+  display: inline-block;
+  text-transform: capitalize;
+  box-shadow: 20px 20px 0px grey -20px -20px -0px grey;
+} */
+* {
+  position: 0;
+  margin: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.title {
+  background-color: #fff;
+  height: 60px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 15px 15px 15px 15px rgb(238 236 236);
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2px;
+}
+button {
+  border: 2px solid rgb(3, 88, 157);
+  border-radius: 10px;
+  height: 40px;
+  width: 140px;
+  padding: 2px;
+  text-align: center;
+  color: rgb(3, 88, 157);
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 10px;
+}
+h1 {
+  color: rgb(3, 88, 157);
+  margin-top: 10px;
+  margin-right: 250px;
+}
+.layout h1 {
+  margin-left: 30px;
+  color: #000;
+  margin-top: 100px;
+}
+a {
+  margin: 20px;
+  color: grey;
+  font-weight: 500;
+  font-size: 20px;
+}
+.ptag {
+  display: flex;
+  margin-left: 250px;
+}
+.layout {
+  background-color: #dbecee;
+  height: 900px;
+  width: auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  box-shadow: 15px 15px rgb(238 236 236);
+}
+.contentLayout {
+  background-color: #fff;
+  height: 200px;
+  width: 700px;
+  border-radius: 10px;
+  margin-top: 100px;
+  margin-right: 100px;
+  text-align: center;
+  box-shadow: 2px 2px 2px rgb(122, 122, 122);
+  flex-wrap: wrap;
+}
+.demoLayout {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-weight: 500;
+}
+h3 {
+  margin-left: 30px;
+  color: grey;
+  margin-top: 10px;
+  font-weight: 500;
+}
+#btProject {
+  background-color: rgb(3, 88, 157);
+  color: whitesmoke;
+  font-size: 20px;
+}
+#btSamples {
+  border: none;
+  background-color: #b9b9b9;
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  margin-left: 10px;
+}
+#h3Demo {
+  color: grey;
+  font-weight: 500;
+  margin: 2;
+  font-size: 16px;
+  margin-top: 10px;
+}
+#h1Demo {
+  color: #000;
+  margin-top: 10px;
+  font-weight: 700;
+  margin-left: 0;
+  font-size: 25px;
+  margin-right: 0;
+}
+#demoBt {
+  background-color: rgb(3, 88, 157);
+  color: #5be0ef;
+  margin-top: 10px;
+  margin-right: 200px;
+}
+b {
+  color: #000;
+}
