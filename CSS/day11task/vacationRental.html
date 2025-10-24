@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <title>Vacation Rental</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="contact">
+        <div class="phNo">
+          <p>
+            Phone no:<b>+91 7397165428</b> or email us:<b>emailus@gmail.com</b>
+          </p>
+        </div>
+        <div class="icons">
+          <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+          <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+          <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="icon"><i class="fa-brands fa-youtube"></i></div>
+        </div>
+      </div>
+      <div class="navBar">
+        <div class="title">
+          <h2 id="t1">Vacation</h2>
+          <h2 id="t2">Rental</h2>
+        </div>
+        <div class="navText">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Services</a>
+          <a href="">Apartment Room</a>
+          <a href="">Blog</a>
+          <a href="">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="mainBanner">
+        <p>Welcome to Vacation Rental</p>
+        <h1>
+          <pre>
+Rent an appartment 
+for your vacation
+</pre
+          >
+        </h1>
+        <div id="buttons">
+          <div class="btnA"><button>LEARN MORE</button></div>
+          <div class="btnB"><button>CONTACT US</button></div>
+        </div>
+      </div>
+      <div class="mainForm">
+        <h2 id="h2A">Book your apartment</h2>
+        <input type="text" placeholder="Full name" id="i1" />
+        <input type="text" placeholder="check-in" id="i2" />
+        <input type="text" placeholder="check-out" id="i3" />
+        <input type="number" placeholder="adult" id="i4" />
+        <input type="number" placeholder="children" id="i5" />
+        <input type="number" placeholder="Phone number" id="i6" />
+        <input type="time" placeholder="Time" id="i7" />
+        <button id="b2A">BOOK APARTMENT NOW</button>
+      </div>
+    </div>
+  </body>
+  <style>
+    * {
+      position: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .contact {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: rgb(207, 57, 82);
+      color: #fff;
+      height: 20px;
+      margin-top: 3px;
+      font-size: 10px;
+    }
+    .contact .icons {
+      display: flex;
+    }
+    .contact .icons .icon {
+      margin-right: 20px;
+    }
+    .navBar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .navBar .title {
+      display: flex;
+      margin: 15px;
+    }
+    .title #t2 {
+      color: rgb(207, 57, 82);
+    }
+    .navText a {
+      color: #000;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    .navText a:hover {
+      border-bottom: 3px solid rgb(207, 57, 82);
+      border-width: 3px;
+      color: rgb(207, 57, 82);
+    }
+    .main {
+      background-image: url("../asset/image/home.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: calc(100vh - 60px);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .main .mainBanner #buttons {
+      display: flex;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    .main .mainBanner #buttons .btnA button {
+      text-align: center;
+      margin: 10px 10px 10px 0px;
+      padding: 10px;
+      border: none;
+      background-color: rgb(207, 57, 82);
+      color: #fff;
+      border-radius: 2px;
+    }
+    .main .mainBanner #buttons .btnB button {
+      text-align: center;
+      margin: 10px 0px 10px 10px;
+      padding: 10px;
+      border: none;
+      background-color: #fff;
+      color: #000;
+      border-radius: 2px;
+    }
+
+    .main .mainForm {
+      background-color: #fff;
+      color: #000;
+      width: 100%;
+      max-width: 300px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      border-radius: 5px;
+      font-size: 13px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .mainForm input,
+    .mainForm button {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    @media (max-width: 480px) {
+      .main .mainForm {
+        grid-template-columns: 1fr;
+      }
+
+      #h2A {
+        grid-column: 1;
+      }
+
+      #b2A {
+        grid-column: 1;
+      }
+    }
+
+    #h2A {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+
+    #i1 {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      padding: 10px;
+      border: none;
+      background-color: rgb(219, 217, 217);
+      color: #000;
+      border-radius: 5px;
+    }
+
+    #i2 {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      padding: 10px;
+      border: none;
+      background-color: rgb(219, 217, 217);
+      color: #000;
+      border-radius: 5px;
+    }
+    #i3 {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+      padding: 10px;
+      border: none;
+      background-color: rgb(219, 217, 217);
+      color: #000;
+      border-radius: 5px;
+    }
+    #i4 {
+      grid-column: 1 / 2;
+      grid-row: 4 / 5;
+      padding: 10px;
+      border: none;
+      background-color: rgb(219, 217, 217);
+      color: #000;
+      border-radius: 5px;
+    }
+    #i5 {
+      grid-column: 2 / 3;
+      grid-row: 4/ 5;
+      padding: 10px;
+      border: none;
+      background-color: rgb(219, 217, 217);
+      color: #000;
+      border-radius: 5px;
+    }
+    #i6 {
+      grid-column: 1 / 2;
+      grid-row: 5 / 6;
+      padding: 10px;
+      border: none;
+      background-color: rgb(219, 217, 217);
+      color: #000;
+      border-radius: 5px;
+    }
+    #i7 {
+      grid-column: 2 / 3;
+      grid-row: 5 / 6;
+      padding: 10px;
+      border: none;
+      background-color: rgb(219, 217, 217);
+      color: #000;
+      border-radius: 5px;
+    }
+    #b2A {
+      grid-column: 1 / 3;
+      grid-row: 6 / 7;
+      text-align: center;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: none;
+      background-color: rgb(207, 57, 82);
+      color: #fff;
+      border-radius: 5px;
+    }
+  </style>
+</html>
