@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task for Javascript</title>
+  </head>
+  <body>
+    <script>
+      //Arithmetic operations
+      // Write a program to find the sum, difference, product, and quotient of two number?
+      let a = 10;
+      let b = 20;
+      let c = 30;
+
+      console.log(a + b);
+      console.log(a - b);
+      console.log(a * b);
+      console.log(a / b);
+
+      //Take three numbers and find their average.
+      let d = (a + b + c) / 3;
+      console.log(d);
+
+      //Calculate the area of a rectangle (length × breadth).
+      let len = 20;
+      let wid = 30;
+      let area = len * wid;
+      console.log(area);
+
+      //Convert temperature from Celsius to Fahrenheit using a formula.
+      let cel = 205;
+      farenheit = (cel * 9) / 5 + 32;
+      console.log(farenheit);
+
+      //Find the remainder when one number is divided by another.
+      console.log(a % b);
+
+      //Assingnment Operator
+      //Assign a number to a variable and then increase it by 10 using the += operator.
+      let num = 25;
+      console.log((num += 10));
+
+      //Write a program that multiplies a number by 5 using *=.
+      console.log((num *= 5));
+
+      //Use -= to decrease the value of a variable by 3.
+      console.log((num -= 3));
+
+      //Divide a variable by 2 using /= and print the updated result.
+      console.log((num /= 2));
+      document.write((num /= 2));
+
+      //Combine multiple assignment operators in one example.
+      let x = 5;
+      y = 3;
+      z = 9;
+      num1 = x += y *= z -= y /= x;
+      console.log(num1);
+      document.write(num1);
+
+      //Comparision Operators
+      //Compare two numbers and print whether they are equal or not.
+      let r = 20;
+      let r1 = 30;
+      console.log(r == r1);
+      document.write(r == r1);
+
+      //Check if one number is greater than another.
+      console.log(c > b);
+
+      //Compare two string variables to check if they are the same.
+      let str1 = "hello";
+      let str2 = "world";
+      console.log(str1 == str2);
+      document.write(str1 == str2);
+
+      //Test whether a number is less than or equal to 100.
+      console.log(r1 <= 100);
+
+      //Write a program to check if two numbers are strictly equal (===).
+      let r2 = 3;
+      r3 = "3";
+      console.log(r2 === r3);
+
+      //Logical Operators
+      //Check if a number is between 10 and 50 using logical AND (&&).
+
+      let r4 = 35;
+      console.log(r4 > 10 && r4 < 50);
+
+      //Check if a number is less than 10 OR greater than 100 using ||.
+      console.log(r4 > 10 || r4 < 50);
+
+      //Use NOT (!) to invert a Boolean value.
+      let bool = true;
+      console.log(!bool);
+
+      //Combine && and || in one statement to test a complex condition.
+      r5 = 24;
+      console.log(r4 > 10 && (r4 < 50 == r5 > 10 || r5 < 50));
+
+      //Check if a student passes (marks ≥ 35) using logical operators.
+      d = (a + b + c) / 3;
+      console.log(d >= 35);
+
+      //Increament and Decreament operators
+      //Create a counter that increases by 1 using ++.
+      console.log(a++);
+      //Write a program that decreases a variable using --.
+      console.log(a--);
+      //Demonstrate the difference between pre-increment (++x) and post-increment (x++).
+      console.log(x++);
+      console.log(++x);
+      //Show how decrement works in a loop from 10 to 1.
+      for (n = 10; n >= 1; n--) {
+        console.log(n);
+      }
+      //Use ++ and -- in the same expression and observe the result.
+      r5 = 3;
+      r6 = 5;
+      let result = r5++ - --r6;
+
+      console.log(result);
+
+      //Ternary Operator
+      //Check if a number is even or odd using the ternary operator.
+      const r7 = 7;
+      res = r7 % 2 === 0;
+      console.log("is it even : ", res);
+      //Use the ternary operator to find the greater number between two variables.
+      result1 = r7 > r6 ? r7 : r6;
+      console.log(result1);
+      //Write a one-line ternary statement to check if a person can vote (age ≥ 18).
+      const age = 20;
+      const canVote = age >= 18 ? "Eligible to vote" : "Not eligible to vote";
+      console.log(canVote);
+      //Use nested ternary to find if a number is positive, negative, or zero.
+      let number = 7;
+      let result3 = number > 0 ? "Positive" : number < 0 ? "Negative" : "Zero";
+      console.log(result3);
+      //Check whether a string is empty or not using the ternary operator.
+      let myString = "nisha";
+      let message = myString ? "String is not empty" : "String is empty";
+      console.log(message);
+
+      //Bitwise Operator
+      //Use & to find the bitwise AND of two numbers.
+      console.log(a & b);
+      //Use | to find the bitwise OR of two numbers.
+      console.log(a | b);
+      //Use ^ to find the bitwise XOR of two numbers.
+      console.log(a ^ b);
+      //Perform a left shift (<<) and right shift (>>) on a number.
+      // Shift left by 1 position
+      let shiftedLeft1 = a << 1; // Binary: 00001010 (decimal: 10)
+      console.log(shiftedLeft1); // Output: 10
+      // Shift left by 2 positions
+      let shiftedLeft2 = a << 2; // Binary: 00010100 (decimal: 20)
+      console.log(shiftedLeft2);
+
+      // Define some flags using powers of 2 for distinct bit representation
+      const FLAG_READ = 1; // Binary: 001
+      const FLAG_WRITE = 2; // Binary: 010
+      const FLAG_EXECUTE = 4; // Binary: 100
+
+      // Simulate user permissions
+      let userPermissions = FLAG_READ | FLAG_EXECUTE; // User has read and execute permissions (001 | 100 = 101)
+
+      // Check if the user has a specific permission using bitwise AND
+      function hasPermission(permissions, flag) {
+        return (permissions & flag) === flag;
+      }
+      //Combine bitwise and logical operators in one example.
+      // Check if the user is an admin (hypothetical, not based on flags)
+      const isAdmin = true;
+
+      // Combine bitwise and logical operators in a conditional statement
+      if (
+        isAdmin ||
+        (hasPermission(userPermissions, FLAG_WRITE) &&
+          hasPermission(userPermissions, FLAG_READ))
+      ) {
+        console.log("User is an admin OR has both read and write permissions.");
+      } else if (hasPermission(userPermissions, FLAG_READ)) {
+        console.log("User has read permission.");
+      } else {
+        console.log("User has no relevant permissions.");
+      }
+
+      // Example of checking individual permissions
+      console.log(
+        `User has READ permission: ${hasPermission(userPermissions, FLAG_READ)}`
+      );
+      console.log(
+        `User has WRITE permission: ${hasPermission(
+          userPermissions,
+          FLAG_WRITE
+        )}`
+      );
+      console.log(
+        `User has EXECUTE permission: ${hasPermission(
+          userPermissions,
+          FLAG_EXECUTE
+        )}`
+      );
+      console.log("35. Combine bitwise and logical operators in one example.");
+      let xx = 5,
+        yy = 3,
+        zz = 0;
+      if (xx & yy && yy | zz) {
+        console.log("Condition is true");
+      } else {
+        console.log("Condition is false");
+      }
+
+      console.log(
+        "36. Declare variables of different types and perform operations."
+      );
+      let str = "Hello";
+      let num2 = 10;
+      let flag = true;
+
+      console.log("String + Number:", str + num2);
+      console.log("Number + Boolean:", num2 + flag);
+      console.log("String + Boolean:", str + flag);
+
+      console.log("37. Swap two numbers without using a third variable.");
+      let a1 = 5,
+        b1 = 10;
+      console.log("Before Swap: a =", a1, "b =", b1);
+
+      a1 = a1 + b1;
+      b1 = a1 - b1;
+      a1 = a1 - b1;
+      console.log("After Swap: a =", a1, "b =", b1);
+
+      console.log("38. Combine arithmetic, comparison, and logical operators.");
+      let x1 = 10,
+        y1 = 20;
+      if (x1 + y1 > 25 && x1 < y1) {
+        console.log("Condition is true");
+      } else {
+        console.log("Condition is false");
+      }
+
+      console.log("39. Check a person’s score using ternary operator.");
+      let score = 85;
+      let result5 = score >= 90 ? "Excellent" : score >= 50 ? "Pass" : "Fail";
+      console.log("Score:", score, "Result:", result5);
+
+      console.log("40. Mini calculator using +, -, , /, %, * operators.");
+      let p = 12,
+        q1 = 4;
+    </script>
+  </body>
+</html>
