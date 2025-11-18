@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cacac9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formHolder {
+  background-color: #fff;
+  width: 150vh;
+  height: 80vh;
+  border-radius: 10px;
+  margin-top: 80px;
+  display: flex;
+  overflow: hidden;
+}
+
+/* Left image section */
+.formImage {
+  width: 75vh;
+  height: 100%;
+  background-image: url("../asset/image/bgimage.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leftImage {
+  width: 55vh;
+  height: 70%;
+}
+/* Right form section */
+.formContent {
+  width: 75vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px;
+  gap: 10px;
+}
+
+h1 {
+  color: #00255c;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  text-align: left;
+  color: grey;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* All inputs clean */
+input,
+select {
+  width: 100%;
+  height: 45px;
+  border: 1px solid grey;
+  border-radius: 30px;
+  padding: 10px 15px;
+  background-color: aliceblue;
+  margin-top: 5px;
+}
+
+/* Two inputs side-by-side */
+.twoCol {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Submit button */
+.submitBtn {
+  margin-top: 20px;
+  width: 40%;
+  padding: 12px;
+  background: #00255c;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+  transition: 0.2s;
+}
+
+.submitBtn:hover {
+  background-color: #345dd0;
+}
+.completionPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  text-align: center;
+}
+
+.completionPopup h1 {
+  margin-bottom: 10px;
+}
+.badge {
+  width: 80px;
+  height: 80px;
+  background: #28a745;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.successIcon {
+  font-size: 50px;
+  color: #fff;
+}
